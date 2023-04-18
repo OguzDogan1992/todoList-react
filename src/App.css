@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left, #ff9966, #ff5e62);
+  font-family: 'Noto Sans Avestan', sans-serif;
+}
+
+.container{
+  width: 70%;
+  margin: auto;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 55px;
+  align-items: center;
+}
+
+.userInput{
+  width: 400px;
+  text-align: center;
+}
+
+.userInput input {
+  width: 80%;
+  outline: none;
+  padding: 12px;
+  border: none;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  font-size: .8rem;
+}
+
+.userInput input:focus{
+  border: none;
+}
+
+.userInput button {
+  cursor: pointer;
+  padding: 12px;
+  width: fit-content;
+  transition: .35s;
+  outline: none;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.userInput button:hover{
+  background-color: transparent;
+  color: white;
+}
+
+.todos{
+  width: 500px;
+  margin: auto;
+}
+
+.items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: white;
+  height: auto;
+  border-radius: 5px;
+  padding: 16px;
+  color: rgb(19, 19, 19);
+  margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.deleteButton {
+  width: 23px;
+  height: 23px;
+  border-radius: 100%;
+  margin-left: 5px;
+  border: none;
+  background-color: lightgray;
+  font-size: medium;
+}
+
+.deleteButton:hover{
+  background-color: #ff5e62;
+  color: white;
+  transition: .35s;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: 'Fugaz One', cursive;
+  color: white;
+}
+
+@media(max-width:768px){
+  .nav{
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .userInput {
+    width: 100%;
+  }
+
+  .todos {
+    width: 100%;
+  }
+}
+
+@media(max-width:480px) {
+  .userInput input {
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+}
+
+@media(max-width:320px) {
+  .userInput input {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+}
